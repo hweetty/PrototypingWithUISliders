@@ -22,6 +22,9 @@ public class SliderFactory {
 	var sliders = [SliderObject]()
 
 	public func show(in view: UIView) {
+		stackView.subviews.forEach{ $0.removeFromSuperview() }
+		sliders.removeAll()
+
 		view.addSubview(stackView)
 		stackView.axis = .vertical
 		stackView.alignment = .fill
