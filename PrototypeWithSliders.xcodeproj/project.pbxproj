@@ -13,6 +13,8 @@
 		F17545C31E9A748300CD4AC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17545C21E9A748300CD4AC7 /* Assets.xcassets */; };
 		F17545C61E9A748300CD4AC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17545C41E9A748300CD4AC7 /* LaunchScreen.storyboard */; };
 		F17545CE1E9A74D900CD4AC7 /* SliderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17545CD1E9A74D900CD4AC7 /* SliderFactory.swift */; };
+		F1A9C8D91E9AC5FF00BC1059 /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A9C8D81E9AC5FF00BC1059 /* CircleViewController.swift */; };
+		F1A9C8DC1E9AC66800BC1059 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A9C8DB1E9AC66800BC1059 /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F17545C51E9A748300CD4AC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F17545C71E9A748300CD4AC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F17545CD1E9A74D900CD4AC7 /* SliderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderFactory.swift; path = Sources/SliderFactory.swift; sourceTree = SOURCE_ROOT; };
+		F1A9C8D81E9AC5FF00BC1059 /* CircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
+		F1A9C8DB1E9AC66800BC1059 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleView.swift; path = "Circles Example/CircleView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +63,22 @@
 				F17545BB1E9A748300CD4AC7 /* AppDelegate.swift */,
 				F17545BD1E9A748300CD4AC7 /* ViewController.swift */,
 				F17545CD1E9A74D900CD4AC7 /* SliderFactory.swift */,
+				F1A9C8DA1E9AC64F00BC1059 /* Circles */,
 				F17545BF1E9A748300CD4AC7 /* Main.storyboard */,
 				F17545C21E9A748300CD4AC7 /* Assets.xcassets */,
 				F17545C41E9A748300CD4AC7 /* LaunchScreen.storyboard */,
 				F17545C71E9A748300CD4AC7 /* Info.plist */,
 			);
 			path = PrototypeWithSliders;
+			sourceTree = "<group>";
+		};
+		F1A9C8DA1E9AC64F00BC1059 /* Circles */ = {
+			isa = PBXGroup;
+			children = (
+				F1A9C8D81E9AC5FF00BC1059 /* CircleViewController.swift */,
+				F1A9C8DB1E9AC66800BC1059 /* CircleView.swift */,
+			);
+			name = Circles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F17545BE1E9A748300CD4AC7 /* ViewController.swift in Sources */,
+				F1A9C8DC1E9AC66800BC1059 /* CircleView.swift in Sources */,
 				F17545BC1E9A748300CD4AC7 /* AppDelegate.swift in Sources */,
+				F1A9C8D91E9AC5FF00BC1059 /* CircleViewController.swift in Sources */,
 				F17545CE1E9A74D900CD4AC7 /* SliderFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +322,7 @@
 				F17545CC1E9A748300CD4AC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

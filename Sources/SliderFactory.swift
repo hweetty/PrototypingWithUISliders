@@ -46,10 +46,21 @@ public class SliderFactory {
 	}
 
 	@discardableResult
-	func addSlider(named: String = "", for constraint: NSLayoutConstraint, minValue: CGFloat, maxValue: CGFloat, cb: (()->Void)? = nil) -> UISlider {
+	func addSlider(named: String, for constraint: NSLayoutConstraint, minValue: CGFloat, maxValue: CGFloat, cb: (()->Void)? = nil) -> UISlider {
 
 		let slider = new(named: named, value: Float(constraint.constant), minValue: Float(minValue), maxValue: Float(maxValue)) { newValue in
 			constraint.constant = CGFloat(newValue)
+			cb?()
+		}
+
+		return slider
+	}
+
+	@discardableResult
+	func addSlider(named: String, for floatPointer: UnsafeMutablePointer<CGFloat>, minValue: CGFloat, maxValue: CGFloat, cb: (()->Void)? = nil) -> UISlider {
+
+		let slider = new(named: named, value: Float(floatPointer.pointee), minValue: Float(minValue), maxValue: Float(maxValue)) { newValue in
+			floatPointer.pointee = newValue
 			cb?()
 		}
 

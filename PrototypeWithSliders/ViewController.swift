@@ -39,7 +39,7 @@ class ViewController: UIViewController {
 		])
 
 		let adjustableConstraints = [
-			("top", topView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20)),
+			("top", topView.topAnchor.constraint(equalTo: view.topAnchor, constant: 64)),
 			("left", topView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 12)),
 			("right", topView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -12)),
 			("height", topView.heightAnchor.constraint(equalToConstant: 53.0)),
